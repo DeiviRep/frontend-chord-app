@@ -1,0 +1,12 @@
+.container {
+  background-color: #417be7;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+}
+.container p {
+  color: orange;
+}

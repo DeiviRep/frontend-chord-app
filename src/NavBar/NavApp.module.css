@@ -1,0 +1,21 @@
+/* styles.module.css */
+.header {
+    /* width: 100%; */
+    background-color: #f1f1f136;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+  }
+  .header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  .header nav a:hover {
+    color: aqua;
+  }
+  
