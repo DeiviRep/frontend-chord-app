@@ -4,17 +4,20 @@ import Contexto from '../../context/Contexto';
 // import { Title, Container } from './styles-in-js/Login.styles';
 import { Button } from './styles-in-js/Button.styles';
 import { Div } from './styles-in-js/Welcome.styles';
+import styles from './styles-modules/Login.module.css'
 
-// // Define los estilos utilizando CSS-in-JS
-// const Container = styled.div`
-//   background-color: #f1f1f1;
-//   padding: 20px;
-// `;
+const MyButon = ({ accion, name }) => {
+  return (
+    <button className={styles.button} onClick={accion}>
+      {name}
+    </button>
+  )
+}
 
-// const Title = styled.h1`
-//   font-size: 24px;
-//   color: #333;
-// `;
+const nombres = {
+  login: 'Login',
+  register: 'Registrate'
+}
 
 function Login() {
   const { logearme } = useContext(Contexto)
@@ -32,12 +35,8 @@ function Login() {
     <>
       <Div >
         <h1>Login</h1>
-        <Button onClick={login}>Login</Button>
-        <Button onClick={register}>Register</Button>
-        {/* <Container>
-          <Title>Título del componente</Title>
-          <p>Contenido del componente...</p>
-        </Container> */}
+        <MyButon accion={login} name={nombres.login} />
+        <MyButon accion={register} name={nombres.register} />
       </Div>
     </>
   )
