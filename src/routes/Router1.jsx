@@ -1,11 +1,11 @@
-import Login from '../components/Public/Login'
+import Login from '../templates/Public/Login'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Register from '../components/Public/Register'
+import Register from '../templates/Public/Register'
 import RutasPublicas from './RutasPublicas'
 import RutasPrivadas from './RutasPrivadas'
 import Router2 from './Router2'
-import Welcome from '../components/Public/Welcome'
+import Welcome from '../templates/Public/Welcome'
 import NavWelcome from '../NavBar/NavWelcome'
 
 function Router1() {

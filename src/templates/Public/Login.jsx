@@ -2,17 +2,8 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Contexto from '../../context/Contexto';
 // import { Title, Container } from './styles-in-js/Login.styles';
-import { Button } from './styles-in-js/Button.styles';
 import { Div } from './styles-in-js/Welcome.styles';
-import styles from './styles-modules/Login.module.css'
-
-const MyButon = ({ accion, name }) => {
-  return (
-    <button className={styles.button} onClick={accion}>
-      {name}
-    </button>
-  )
-}
+import Buton from '../../components/Buton';
 
 const nombres = {
   login: 'Login',
@@ -35,8 +26,8 @@ function Login() {
     <>
       <Div >
         <h1>Login</h1>
-        <MyButon accion={login} name={nombres.login} />
-        <MyButon accion={register} name={nombres.register} />
+        <Buton accion={login} name={nombres.login} />
+        <Buton accion={register} name={nombres.register} />
       </Div>
     </>
   )

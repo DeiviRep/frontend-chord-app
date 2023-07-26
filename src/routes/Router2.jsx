@@ -1,10 +1,10 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Error404 from '../components/Private/Error404'
+import Error404 from '../templates/Private/Error404'
 import NavApp from '../NavBar/NavApp'
-import Biblioteca from '../components/Private/Biblioteca'
-import Favoritos from '../components/Private/Favoritos'
-import Inicio from '../components/Private/Inicio'
+import Biblioteca from '../templates/Private/Biblioteca'
+import Favoritos from '../templates/Private/Favoritos'
+import Inicio from '../templates/Private/Inicio'
 
 function Router2() {
     return (
